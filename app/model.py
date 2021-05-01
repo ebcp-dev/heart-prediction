@@ -4,6 +4,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
 sc = StandardScaler()
+# For dev
+# data = pd.read_csv('./model/heart-disease.csv')
+# model = joblib.load('./model/randomforestmodel.joblib')
+# For production
 data = pd.read_csv('app/model/heart-disease.csv')
 model = joblib.load('app/model/randomforestmodel.joblib')
 # Assign 13 features to X, and column 'target' to predictor y
